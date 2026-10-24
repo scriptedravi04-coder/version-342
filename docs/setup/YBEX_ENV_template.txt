@@ -1,0 +1,100 @@
+# ═══════════════════════════════════════════════════════════════════════════════════════════════════════
+# YBEX_ENV — ONE secret for every setting (v376). AI Studio → Secrets → add ONE secret named  YBEX_ENV
+# and paste this whole block as its value, with your real values filled in after each "=".
+#  • No quotes needed. One setting per line. Lines starting with # are notes and are skipped.
+#  • Leave a value empty if you don't use that feature. Never put this file with values on GitHub / WhatsApp.
+#  • A secret you still have set separately in AI Studio wins over the same name here (so old secrets keep working —
+#    you can delete them one by one once YBEX_ENV is in).
+#  • GEMINI_API_KEY is given by AI Studio itself — you don't need it here.
+# ═══════════════════════════════════════════════════════════════════════════════════════════════════════
+
+# ── Supabase (REQUIRED) — Supabase → Project settings → API ──
+SUPABASE_URL=
+SUPABASE_SERVICE_ROLE_KEY=
+SUPABASE_ANON_KEY=
+VITE_SUPABASE_URL=
+VITE_SUPABASE_ANON_KEY=
+
+# ── Addresses ── (APP_URL stays the AI Studio address while Google sign-in's redirect is set to it)
+APP_URL=https://ybexapp.ai.studio
+SITE_URL=https://ybexmedia.in
+VITE_PUBLIC_SITE_URL=https://ybexmedia.in
+
+# ── Cloudflare proxy (REQUIRED for ybexmedia.in) — same value as in the Cloudflare Worker ──
+PROXY_SHARED_SECRET=
+
+# ── Server secrets (REQUIRED) — long random strings, keep the SAME forever ──
+SESSION_SECRET=
+OAUTH_STATE_SECRET=
+MEDIA_KEY_SECRET=
+EMAIL_LINK_SECRET=
+CRON_SECRET=
+NODE_ENV=production
+
+# ── Email — Resend (REQUIRED) ──
+RESEND_API_KEY=
+RESEND_FROM_EMAIL=Ybex <noreply@ybexmedia.in>
+ADMIN_EMAIL=
+ADMIN_ALERT_EMAIL=
+
+# ── Razorpay (REQUIRED) — Dashboard → Settings → API keys (LIVE) / Webhooks ──
+RAZORPAY_KEY_ID=
+RAZORPAY_KEY_SECRET=
+RAZORPAY_WEBHOOK_SECRET=
+PAYMENTS_TEST_MODE=false
+
+# ── Google sign-in — Google Cloud → APIs & Services → Credentials → OAuth client ──
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+
+# ── Apple sign-in (iPhone) ──
+APPLE_CLIENT_ID=
+
+# ── Phone push (website / PWA) — VAPID keys, keep the same forever ──
+VAPID_PUBLIC_KEY=
+VAPID_PRIVATE_KEY=
+VAPID_SUBJECT=mailto:support@ybexmedia.in
+
+# ── Instagram fetch (followers / reach) — Meta ──
+IG_GRAPH_TOKEN=
+IG_BUSINESS_ID=
+IG_APP_ID=
+IG_APP_SECRET=
+META_APP_SECRET=
+IG_WEBHOOK_VERIFY_TOKEN=
+IG_DM_USERNAME=
+IG_MESSAGING_TOKEN=
+IG_TOKEN_KEY=
+
+# ── Android app push (Firebase) — whole service-account JSON on ONE line ──
+FCM_SERVICE_ACCOUNT_JSON=
+
+# ── iPhone app push (Apple) ──
+APNS_KEY=
+APNS_KEY_ID=
+APNS_TEAM_ID=
+APNS_BUNDLE_ID=com.ybex.app
+APNS_PRODUCTION=true
+
+# ── WhatsApp reminders (optional) ──
+WHATSAPP_API_KEY=
+WHATSAPP_PHONE_NUMBER_ID=
+
+# ── SMS sign-in codes (optional — needs DLT; leave empty for now) ──
+FAST2SMS_API_KEY=
+MSG91_AUTH_KEY=
+MSG91_OTP_TEMPLATE_ID=
+
+# ── Optional / admin ──
+ADMIN_QUICK_PIN=
+CORS_ORIGINS=
+ASSIST_MODEL=
+ASSIST_DAILY_LIMIT=
+BROADCAST_DAILY_LIMIT=
+
+# ── MUST stay empty / off on the live site ──
+DEMO_LOGIN=
+DEMO_SEED=
+OTP_ECHO=off
+RESEND_ALLOW_FALLBACK=
+SEO_NOINDEX=
